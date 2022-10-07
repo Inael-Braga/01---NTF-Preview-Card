@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --VeryDarkBlueMainBG: hsl(217, 54%, 11%);
+    --VeryDarkBlueCardBG: hsl(216, 50%, 16%);
+    --VeryDarkBlueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    color: var(--White);
+    font-size: 18px;
+    margin: auto;
+
+}
+body{
+    background-color: var(--VeryDarkBlueMainBG);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.cardcontent{
+    background-color: var(--VeryDarkBlueCardBG);
+    border-radius: 24px;
+    padding: 24px;
+    width: 350px;
+    height: 600px;
+    box-shadow: 10px 10px 15px 1px rgba(0, 0, 0, 0.2);
+}
+.imgcard{
+    position: relative;
+    cursor: pointer;
+}
+
+.imgcard .imgprincipal{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+
+}
+.imgoverlay{
+    opacity: .0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 255, 255, 0.432);
+
+}
+.imgolho{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+.imgcard:hover .imgoverlay {
+    opacity: 1;
+    }
+/* ////////// BOTTOM //////////// */
+.bottom{
+    padding-top: 12px;
+}
+.bottom h1{
+    font-size: 1.2rem
+}
+.bottom p{
+    padding: 12px 0 12px 0;
+    color: var(--SoftBlue);
+    font-weight: 300;
+}
+.bottomitems{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+
+.eth{
+    display: flex;
+    margin: 0;
+
+}
+.eth p{
+    color: var(--Cyan);
+    padding-left: 5px;
+}
+.days{
+    display: flex;
+    margin: 0;
+
+}
+.days p{
+    color: var(--SoftBlue);
+    padding-left: 5px;
+}
+.line{
+    background-color: var(--VeryDarkBlueLine);
+    height: 1px;
+    width: 100%;
+}
+.creation{
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 0;
+    gap: 10px;
+    padding-top: 24px;
+
+}
+.creation img{
+    height: 45px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    object-fit: contain;
+    margin: 0;
+
+}
+.creation p{
+    margin: 0;
+
+}
+.creation span{
+    cursor: pointer;
+}
+span:hover {
+    color:var(--Cyan);
+
+}
